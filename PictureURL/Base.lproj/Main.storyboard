@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PictureURL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokedex" translatesAutoresizingMaskIntoConstraints="NO" id="E98-2t-0MU" userLabel="Background">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="teV-HL-Bn5">
+                                <rect key="frame" x="16" y="20" width="343" height="547"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiN-fi-yl7">
+                                <rect key="frame" x="165" y="615.5" width="44" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Load"/>
+                                <connections>
+                                    <action selector="loadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ME-q8-FAN"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://img00.deviantart.net/b252/i/2017/324/4/6/shinjuku_incident_by_kawacy-dbudchn.jpg" borderStyle="roundedRect" placeholder="Type URL here" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8U4-FF-saL">
+                                <rect key="frame" x="16" y="583.5" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="teV-HL-Bn5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ALL-3u-1r3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="teV-HL-Bn5" secondAttribute="trailing" constant="16" id="BKi-T6-Wfr"/>
+                            <constraint firstItem="E98-2t-0MU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FXf-Ks-UU1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E98-2t-0MU" secondAttribute="trailing" id="Fz1-jP-w30"/>
+                            <constraint firstItem="aiN-fi-yl7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M9d-cB-zPg"/>
+                            <constraint firstItem="8U4-FF-saL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ncj-nu-R5A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E98-2t-0MU" secondAttribute="bottom" id="V0X-qH-hLL"/>
+                            <constraint firstItem="8U4-FF-saL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="265" id="XhM-DS-LQh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="teV-HL-Bn5" secondAttribute="bottom" constant="100" id="Zt2-Qj-d0R"/>
+                            <constraint firstItem="8U4-FF-saL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a7o-0k-K3d"/>
+                            <constraint firstItem="aiN-fi-yl7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="300" id="bKX-iI-Axj"/>
+                            <constraint firstItem="teV-HL-Bn5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gy9-fc-I0C"/>
+                            <constraint firstItem="E98-2t-0MU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sTd-rK-aDd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="aiN-fi-yl7" id="6Hr-k5-nXn"/>
+                        <outlet property="imageView" destination="teV-HL-Bn5" id="zmF-Hs-bnt"/>
+                        <outlet property="textField" destination="8U4-FF-saL" id="z8z-PN-t8p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pokedex" width="320" height="568"/>
+    </resources>
+</document>
