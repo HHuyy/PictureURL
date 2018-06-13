@@ -32,7 +32,7 @@
                                     <action selector="loadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ME-q8-FAN"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://img00.deviantart.net/b252/i/2017/324/4/6/shinjuku_incident_by_kawacy-dbudchn.jpg" borderStyle="roundedRect" placeholder="Type URL here" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8U4-FF-saL">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type URL here" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8U4-FF-saL">
                                 <rect key="frame" x="16" y="583.5" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
